@@ -7,14 +7,14 @@ class UserController extends BaseController {
 	//注册
 	public function register(){
 		if (!IS_POST) {
-			  $this->assign('CloseVerify',C('CloseVerify'));
+			  $this->assign('CloseVerify',C('CLOSEVERIFY'));
 			  $this->display ();
 			}else{
 			  $username = I("username");
 			  $password = I("password");
 			  $confirm_password = I("confirm_password");
 			  $v_code = I("v_code");
-			  if (C('CloseVerify') || $v_code && $v_code == session('v_code') ) {
+			  if (C('CLOSEVERIFY') || $v_code && $v_code == session('v_code') ) {
 		  		if ( $password != '' && $password == $confirm_password) {
 
 			  		if ( ! D("User")->isExist($username) ) {
@@ -56,14 +56,14 @@ class UserController extends BaseController {
 					exit();
 				}
 			}
-			$this->assign('CloseVerify',C('CloseVerify'));
+			$this->assign('CloseVerify',C('CLOSEVERIFY'));
 		  	$this->display ();
 
 		}else{
 		  $username = I("username");
 		  $password = I("password");
 		  $v_code = I("v_code");
-		  if (C('CloseVerify')) { //如果关闭验证码
+		  if (C('CLOSEVERIFY')) { //如果关闭验证码
 		  	$ret = D("User")->checkLogin($username,$password);
 		    if ($ret) {
 		      session("login_user" , $ret );
