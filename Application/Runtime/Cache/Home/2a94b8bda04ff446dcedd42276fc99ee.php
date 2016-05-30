@@ -38,17 +38,15 @@
         </ul>
         <h3 class="muted">ShowDoc</h3>
       </div>
-
+<!---
       <hr>
 
 		<div id="myCarousel" class="carousel slide">
-		   <!-- 轮播（Carousel）指标 -->
 		   <ol class="carousel-indicators">
 		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		      <li data-target="#myCarousel" data-slide-to="1"></li>
 		      <li data-target="#myCarousel" data-slide-to="2"></li>
 		   </ol>   
-		   <!-- 轮播（Carousel）项目 -->
 		   <div class="carousel-inner">
 		      <div class="item active">
 		         <img src="/Public/img/pic1.jpg" alt="First slide">
@@ -60,7 +58,6 @@
 		         <img src="/Public/img/pic3.jpg" alt="Third slide">
 		      </div>
 		   </div>
-		   <!-- 轮播（Carousel）导航 -->
 		   <a class="carousel-control left" href="#myCarousel" 
 		      data-slide="prev">&lsaquo;</a>
 		   <a class="carousel-control right" href="#myCarousel" 
@@ -70,15 +67,14 @@
 			<a class="btn btn-primary  btn-large" href="http://doc.star7th.com/2" target="_blank">Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="btn  btn-large" href="http://doc.star7th.com/3" target="_blank" >帮助教程&nbsp;<i class="icon-circle-arrow-right"></i></a>
 		</p>
-
       <hr>
-
 
       <div class="footer">
         <p>&copy; Created By <a href="http://blog.star7th.com/" target="_blank"> Star7th</a></p>
       </div>
 
-    </div> <!-- /container -->
+    </div> 
+--->
 
 
     
