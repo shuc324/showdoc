@@ -5,7 +5,9 @@ class ItemController extends BaseController {
 	//项目列表页
     public function index(){
     	$login_user = $this->checkLogin();        
-    	$items  = D("Item")->where("uid = '$login_user[uid]' or item_id in ( select item_id from ".C('DB_PREFIX')."item_member where uid = '$login_user[uid]' ) ")->select();
+    	# $items  = D("Item")->where("uid = '$login_user[uid]' or item_id in ( select item_id from ".C('DB_PREFIX')."item_member where uid = '$login_user[uid]' ) ")->select();
+	# 所有人可见
+    	$items  = D("Item")->select();
         
         $share_url = get_domain().__APP__.'/uid/'.$login_user['uid'];
 
@@ -79,8 +81,8 @@ class ItemController extends BaseController {
         $login_user = session("login_user");
         $uid = $login_user['uid'] ? $login_user['uid'] : 0 ;
             
-        $this->checkItemVisit($uid , $item_id);
-
+	# 所有人可见
+        # $this->checkItemVisit($uid , $item_id);
 
         $item = D("Item")->where("item_id = '$item_id' ")->find();
 
