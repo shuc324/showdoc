@@ -119,8 +119,10 @@ class ItemController extends BaseController {
         $share_url = get_domain().__APP__.'/'.$item_id;
 
         $ItemPermn = $this->checkItemPermn($uid , $item_id) ;
+        #$ItemPermn = true;
 
-        $ItemCreator = $this->checkItemCreator($uid , $item_id);
+        #$ItemCreator = $this->checkItemCreator($uid , $item_id);
+        $ItemCreator = true;
 
         $this->assign("current_page_id" , $current_page_id);
         $this->assign("keyword" , $keyword);

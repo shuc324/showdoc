@@ -64,10 +64,10 @@ class PageController extends BaseController {
         $item_id = $page['item_id'] ?$page['item_id'] :$item_id;
 
         
-        if (!$this->checkItemPermn($login_user['uid'] , $item_id)) {
-            $this->message("你无权限");
-            return;
-        }
+        #if (!$this->checkItemPermn($login_user['uid'] , $item_id)) {
+        #    $this->message("你无权限");
+        #    return;
+        #}
 
         $Catalog = D("Catalog")->where(" cat_id = '$default_cat_id' ")->find();
         if ($Catalog['parent_cat_id']) {
@@ -98,10 +98,10 @@ class PageController extends BaseController {
         $s_number = I("s_number/d")? I("s_number/d") : 99;
 
         $login_user = $this->checkLogin();
-        if (!$this->checkItemPermn($login_user['uid'] , $item_id)) {
-            $this->message("你无权限");
-            return;
-        }
+        #if (!$this->checkItemPermn($login_user['uid'] , $item_id)) {
+        #    $this->message("你无权限");
+        #    return;
+        #}
 
         $data['page_title'] = $page_title ;
         $data['page_content'] = $page_content ;

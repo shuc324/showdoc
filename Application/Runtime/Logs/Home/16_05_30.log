@@ -1,56 +1,6 @@
-[ 2016-05-30T17:16:30+08:00 ] 222.211.214.187 /index.php?s=/home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+[ 2016-05-30T20:01:33+08:00 ] 222.211.214.187 /index.php?s=/home/page/edit/type/new
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''  ) ORDER BY  addtime desc  LIMIT 1' at line 1
 
-[ 2016-05-30T17:16:31+08:00 ] 222.211.214.187 /index.php?s=/home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
-
-[ 2016-05-30T17:16:31+08:00 ] 222.211.214.187 /index.php?s=/home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
-
-[ 2016-05-30T17:16:31+08:00 ] 222.211.214.187 /index.php?s=/home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
-
-[ 2016-05-30T17:16:31+08:00 ] 222.211.214.187 /index.php?s=/home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
-
-[ 2016-05-30T17:16:32+08:00 ] 222.211.214.187 /index.php?s=/home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
-
-[ 2016-05-30T17:16:32+08:00 ] 222.211.214.187 /index.php?s=/home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+[ 2016-05-30T20:01:46+08:00 ] 222.211.214.187 /index.php?s=/home/page/edit/type/new
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''  ) ORDER BY  addtime desc  LIMIT 1' at line 1
 

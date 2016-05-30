@@ -44,10 +44,12 @@
             <li><a href="#" id="share">分享</a></li>
              <li><a href="<?php echo U('Home/Item/word',array('item_id'=>$item['item_id']));?>">导出</a></li>
 
+             <!---<?php if($ItemCreator): ?>--->
               <li><a href="<?php echo U('Home/Item/add',array('item_id'=>$item['item_id']));?>">修改信息</a></li>          
               <li><a href="<?php echo U('Home/Member/edit',array('item_id'=>$item['item_id']));?>">成员管理</a></li>
               <li><a href="<?php echo U('Home/Attorn/index',array('item_id'=>$item['item_id']));?>">转让</a></li>
-            <?php if($ItemCreator): ?><li><a href="<?php echo U('Home/Item/delete',array('item_id'=>$item['item_id']));?>">删除</a></li><?php endif; ?>
+              <li><a href="<?php echo U('Home/Item/delete',array('item_id'=>$item['item_id']));?>">删除</a></li>
+            <!---<?php endif; ?>--->
 
             <li><a href="<?php echo U('Home/Item/index');?>">更多项目</a></li>
           </ul>
@@ -100,10 +102,8 @@
       <!-- 新建栏 -->
       <div class="doc-left-newbar">
 
-          <div><a href="<?php echo U('Home/Page/edit',array('item_id'=>$item['item_id'],'type'=>'new'));?>" id="new-like"><i class="icon-plus"></i>&nbsp;新建页面</a></div>
-          <div><a href="<?php echo U('Home/Catalog/edit',array('item_id'=>$item['item_id']));?>" id="dir-like" ><i class="icon-folder-open"></i>新建目录</a></div>
-
-        <?php if($ItemPermn): endif; ?>
+        <?php if($ItemPermn): ?><div><a href="<?php echo U('Home/Page/edit',array('item_id'=>$item['item_id'],'type'=>'new'));?>" id="new-like"><i class="icon-plus"></i>&nbsp;新建页面</a></div>
+          <div><a href="<?php echo U('Home/Catalog/edit',array('item_id'=>$item['item_id']));?>" id="dir-like" ><i class="icon-folder-open"></i>新建目录</a></div><?php endif; ?>
 
       </div>
 
@@ -117,10 +117,10 @@
       <!-- 编辑栏 -->
       <div class='page-edit-link pull-right hide'>
         <ul class="inline">
-            <li><a href="" id="share-page" title="分享该接口访问地址给你的好友">分享</a></li>
+          <?php if($ItemPermn): ?><li><a href="" id="share-page" title="分享该接口访问地址给你的好友">分享</a></li>
             <li><a href="" id="copy-link" title="复制该接口到新接口">复制</a></li>
             <li><a href="" id="edit-link" title="编辑接口">编辑</a></li>
-          <?php if($ItemPermn): ?><li><a href="" title="删除接口" onclick="return confirm('确认删除吗？');return false;" id="delete-link">删除</a></li>
+            <li><a href="" title="删除接口" onclick="return confirm('确认删除吗？');return false;" id="delete-link">删除</a></li>
           <?php else: ?>
             <li></li>
             <li></li><?php endif; ?>
