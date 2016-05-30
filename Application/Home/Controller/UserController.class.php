@@ -6,6 +6,7 @@ class UserController extends BaseController {
 
 	//注册
 	public function register(){
+		C('CLOSEVERIFY', 1);
 		if (!IS_POST) {
 			  $this->assign('CloseVerify',C('CLOSEVERIFY'));
 			  $this->display ();
@@ -44,6 +45,7 @@ class UserController extends BaseController {
 	//登录
 	public function login()
 	{
+		C('CLOSEVERIFY', 1);
 		if (!IS_POST) {
 			//如果有cookie记录，则自动登录
 			$cookie_token = cookie('cookie_token');
