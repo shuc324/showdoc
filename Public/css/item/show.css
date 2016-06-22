@@ -1,6 +1,16 @@
   body,html,.doc-body{
     height: 100%;
   }
+
+.nav-list{
+   padding-left:0;
+   padding-right:0;
+}
+
+.nav-list li {
+  font-size:14px;
+}
+
   .doc-head{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -31,7 +41,7 @@
   }
 
   .doc-left ul li{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
   }
   .doc-left ul li a{

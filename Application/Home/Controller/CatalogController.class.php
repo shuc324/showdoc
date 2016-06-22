@@ -21,10 +21,10 @@ class CatalogController extends BaseController {
         $item_id = $Catalog['item_id'] ? $Catalog['item_id'] : I("item_id");
 
         $login_user = $this->checkLogin();
-        if (!$this->checkItemPermn($login_user['uid'] , $item_id)) {
-            $this->message("你无权限");
-            return;
-        }
+        //if (!$this->checkItemPermn($login_user['uid'] , $item_id)) {
+        //    $this->message("你无权限");
+        //    return;
+        //}
 
         $this->assign("item_id" , $item_id);
 
@@ -40,10 +40,10 @@ class CatalogController extends BaseController {
         $item_id =  I("item_id/d");
 
         $login_user = $this->checkLogin();
-        if (!$this->checkItemPermn($login_user['uid'] , $item_id)) {
-            $this->message("你无权限");
-            return;
-        }
+        //if (!$this->checkItemPermn($login_user['uid'] , $item_id)) {
+        //    $this->message("你无权限");
+        //    return;
+        //}
 
         $data['cat_name'] = $cat_name ;
         $data['s_number'] = $s_number ;
